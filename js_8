@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Information Form</title>
+</head>
+<body>
+
+    <h2>Student Information Form</h2>
+
+    <form onsubmit="displayInfo(); return false;">
+
+        <label>Student Name:</label>
+        <input type="text" id="name" required><br><br>
+
+        <label>Roll Number:</label>
+        <input type="number" id="roll" required><br><br>
+
+        <label>Class:</label>
+        <input type="text" id="class" required><br><br>
+
+        <label>Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <h3>Student Details</h3>
+    <p id="result"></p>
+
+    <script>
+        function displayInfo() {
+            let name = document.getElementById("name").value;
+            let roll = document.getElementById("roll").value;
+            let studentClass = document.getElementById("class").value;
+            let email = document.getElementById("email").value;
+
+            let gender = document.querySelector(
+                'input[name="gender"]:checked'
+            ).value;
+
+            document.getElementById("result").innerHTML =
+                "Name: " + name + "<br>" +
+                "Roll Number: " + roll + "<br>" +
+                "Class: " + studentClass + "<br>" +
+                "Email: " + email + "<br>" +
+                "Gender: " + gender;
+        }
+    </script>
+
+</body>
+</html>
