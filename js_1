@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Area Calculator</title>
+</head>
+<body>
+
+    <h2>Area Calculator</h2>
+
+    <script>
+        let base = 10;
+        let height = 5;
+        let length = 8;
+        let width = 4;
+        let radius = 7;
+
+        let triangle = 0.5 * base * height;
+        let rectangle = length * width;
+        let circle = 3.14 * radius * radius;
+
+        document.write("Area of Triangle = " + triangle + "<br>");
+        document.write("Area of Rectangle = " + rectangle + "<br>");
+        document.write("Area of Circle = " + circle);
+    </script>
+
+</body>
+</html>
