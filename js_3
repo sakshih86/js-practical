@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Operations</title>
+</head>
+<body>
+
+    <h2>String Operations</h2>
+
+    <script>
+        let str1 = "Hello";
+        let str2 = "JavaScript";
+
+        document.write("First String: " + str1 + "<br>");
+        document.write("Second String: " + str2 + "<br>");
+
+        document.write("Concatenation: " + str1 + " " + str2 + "<br>");
+        document.write("Length of String: " + str2.length + "<br>");
+        document.write("Uppercase: " + str2.toUpperCase() + "<br>");
+        document.write("Lowercase: " + str2.toLowerCase() + "<br>");
+        document.write("Character at index 2: " + str2.charAt(2) + "<br>");
+        document.write("Substring: " + str2.substring(0, 4));
+    </script>
+
+</body>
+</html>
