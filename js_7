@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array of Objects</title>
+</head>
+<body>
+
+    <h2>Append Objects to an Array</h2>
+
+    <script>
+        let students = [
+            { name: "Amit", age: 20 },
+            { name: "Riya", age: 21 }
+        ];
+
+        document.write("Original Array:<br>");
+        document.write(JSON.stringify(students) + "<br><br>");
+
+        let newStudent = { name: "Rahul", age: 22 };
+
+        students.push(newStudent);
+
+        document.write("After Appending Object:<br>");
+        document.write(JSON.stringify(students) + "<br><br>");
+
+        document.write("Is students an array? " +
+            Array.isArray(students) + "<br>");
+
+        document.write("Is newStudent an array? " +
+            Array.isArray(newStudent));
+    </script>
+
+</body>
+</html>
